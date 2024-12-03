@@ -5,6 +5,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.youlai.boot.modules.essay.model.EssayComment;
 import com.youlai.boot.modules.essay.model.EssayPost;
+import com.youlai.boot.system.model.query.UserPageQuery;
+import com.youlai.boot.system.model.vo.UserPageVO;
+
 import java.util.List;
 
 /**
@@ -12,6 +15,13 @@ import java.util.List;
  */
 public interface EssayPostService extends IService<EssayPost> {
 
+
+    /**
+     * 文章分页列表
+     *
+     * @return
+     */
+    Page<EssayPost> getEssayPostPage(EssayPost queryParams,int pageNum,int pageSize);
     /**
      * 获取带评论和点赞量的文章详细信息
      *

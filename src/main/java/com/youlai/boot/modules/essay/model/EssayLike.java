@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.security.Timestamp;
+import java.time.LocalDateTime;
 
 /**
  * 会员实体-业务模块演示
@@ -25,6 +26,6 @@ public class EssayLike {
 
     private Long userId; // 点赞者ID，与用户表中的ID关联，用于获取点赞者信息
 
-    private Timestamp createTime; // 点赞时间
+    private LocalDateTime createTime; // 点赞时间
 }
 

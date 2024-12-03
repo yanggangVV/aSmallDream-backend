@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.security.Timestamp;
+import java.time.LocalDateTime;
 
 /**
  * 会员实体-业务模块演示
@@ -27,6 +28,6 @@ public class EssayComment {
 
     private String content; // 评论内容
 
-    private Timestamp createTime; // 评论创建时间
+    private LocalDateTime createTime; // 评论创建时间
 }
 
